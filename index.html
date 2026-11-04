@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>클락사이드 디자인 | 앙헬레스·클락 메뉴판·홈페이지·QR메뉴 제작</title>
+<meta name="description" content="앙헬레스·클락 가게를 위한 디자인 스튜디오. QR 웹메뉴판(한국어·English·Tagalog), 가게 홈페이지, 메뉴북, SNS 광고 이미지, 메뉴 사진 보정. 상담 후 48시간 안에 첫 시안.">
+<meta name="keywords" content="앙헬레스 메뉴판, 클락 홈페이지 제작, QR메뉴, 필리핀 가게 디자인, 앙헬레스 디자인, Clark menu design, Angeles QR menu">
+<link rel="canonical" href="https://design.clarksideph.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="클락사이드 디자인 — 메뉴판·홈페이지, 3개 언어로 예쁘게">
+<meta property="og:description" content="앙헬레스·클락 가게 QR메뉴·홈페이지·메뉴북·SNS 광고 이미지. 상담 후 48시간 안에 첫 시안.">
+<meta property="og:image" content="https://design.clarksideph.com/assets/og.jpg">
+<meta property="og:url" content="https://design.clarksideph.com/">
+<meta name="theme-color" content="#FF6A3D">
+<link rel="icon" href="assets/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,500&family=Instrument+Sans:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Clarkside Design Studio (클락사이드 디자인)","url":"https://design.clarksideph.com/","image":"https://design.clarksideph.com/assets/og.jpg","description":"QR menus, websites, menu books and social media ad images for restaurants and shops in Angeles and Clark, Philippines.","areaServed":["Angeles City","Clark Freeport Zone","Pampanga"],"availableLanguage":["Korean","English","Tagalog"],"sameAs":["https://pf.kakao.com/_LxexhxeX"]}</script>
+<style>
+:root{--cream:#FBF6EC;--paper:#fff;--ink:#14213D;--ink2:#4A5468;--tan:#FF6A3D;--tan2:#E2552B;--butter:#FFD978;--sage:#DDE8D3;--sky:#D7E6F5;--peach:#FFE3D6;--line:#E9E0CF}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Pretendard,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.serif{font-family:Fraunces,serif}.label{font-family:'Instrument Sans',Pretendard,sans-serif;font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:13px;color:var(--tan2)}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(251,246,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}.logo img{height:34px}.logo b{font-family:Fraunces;font-weight:800;font-size:24px;line-height:1;display:block}.logo small{font-family:'Instrument Sans';font-weight:700;letter-spacing:.24em;font-size:9.5px;color:var(--tan)}
+.links{display:flex;gap:26px;font-weight:600;font-size:15px}.links a{text-decoration:none}
+.nr{display:flex;gap:10px;align-items:center}
+.lang{display:flex;border:1.5px solid var(--ink);border-radius:99px;overflow:hidden;font-weight:700;font-size:13px}
+.lang button{border:0;background:none;padding:6px 11px;cursor:pointer;color:var(--ink);font:inherit}.lang button.on{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--tan);color:#fff;text-decoration:none;font-weight:800;border-radius:99px;padding:14px 24px;font-size:16px;border:0;cursor:pointer}
+.btn.ghost{background:none;color:var(--ink);border:2px solid var(--ink);padding:12px 22px}
+.btn.sm{padding:9px 16px;font-size:14px}
+/* hero */
+.hero{padding:44px 0 30px}
+.hero h1{font-size:clamp(36px,6.4vw,68px);line-height:1.12;letter-spacing:-.035em;margin:14px 0 0;font-weight:800}
+.hl{background:linear-gradient(transparent 62%,var(--butter) 62%)}
+.hero .en{font-family:Fraunces;font-style:italic;font-size:clamp(18px,2.4vw,26px);color:var(--ink2);margin-top:14px}
+.hero .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.heroimg{position:relative;margin-top:34px;border-radius:28px;overflow:hidden;aspect-ratio:3/2;max-height:620px;width:100%}
+.heroimg img{width:100%;height:100%;object-fit:cover}
+.stk{position:absolute;right:18px;top:18px;width:clamp(96px,14vw,150px);aspect-ratio:1;border-radius:50%;background:var(--tan);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-9deg);text-align:center}
+.stk b{font-family:Fraunces;font-size:clamp(32px,5vw,52px);line-height:.9}.stk span{font-size:clamp(12px,1.6vw,16px);font-weight:700;margin-top:3px}
+.chips{position:absolute;left:16px;bottom:16px;display:flex;gap:6px;flex-wrap:wrap}.chips span{background:rgba(255,255,255,.95);border-radius:99px;padding:7px 14px;font-weight:700;font-size:14px}
+.strip{background:var(--ink);color:#FBF6EC;overflow:hidden;white-space:nowrap;padding:16px 0;margin-top:40px}
+.strip div{display:inline-block;animation:mq 28s linear infinite;font-family:Fraunces;font-style:italic;font-size:clamp(20px,2.6vw,28px)}
+.strip span{margin:0 22px}.strip span:nth-child(even){color:var(--butter);font-style:normal}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.strip div{animation:none}}
+/* sections */
+section{padding:70px 0}
+h2{font-size:clamp(28px,4.2vw,44px);letter-spacing:-.03em;margin:10px 0 0;line-height:1.2}
+h2 em{font-family:Fraunces;font-style:italic;font-weight:500;color:var(--tan);letter-spacing:0}
+.lead{color:var(--ink2);font-size:18px;margin-top:10px;max-width:640px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.card{background:#fff;border-radius:24px;padding:26px;border:1px solid var(--line);border-top:5px solid var(--tan)}
+.card .n{font-family:Fraunces;color:var(--tan);font-weight:800;font-size:30px;line-height:1}
+.card h3{margin:8px 0 6px;font-size:22px;letter-spacing:-.02em}.card p{margin:0;color:var(--ink2);font-size:16px}
+.card .ic{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:12px}
+/* demo */
+.demo{background:var(--ink);color:#fff;border-radius:32px;padding:44px;display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center}
+.demo .label{color:var(--butter)}.demo h2 em{color:var(--butter)}.demo .lead{color:#C9D0DD}
+.dlinks{display:grid;gap:12px;margin-top:24px}
+.dl{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:16px 20px;text-decoration:none}
+.dl b{font-size:18px;display:block}.dl span{font-size:14px;color:#C9D0DD}.dl i{font-style:normal;background:var(--tan);border-radius:99px;padding:8px 14px;font-weight:800;white-space:nowrap}
+.phones{position:relative;height:440px}
+.ph{position:absolute;width:210px;border:9px solid #0B1428;border-radius:36px;overflow:hidden;background:#000;box-shadow:0 26px 50px rgba(0,0,0,.35)}
+.ph img{width:100%}
+/* gallery */
+.tabs{display:flex;gap:8px;margin-top:24px;flex-wrap:wrap}.tabs button{border:1.5px solid var(--ink);background:none;border-radius:99px;padding:8px 16px;font:inherit;font-weight:700;cursor:pointer;color:var(--ink)}.tabs button.on{background:var(--ink);color:#fff}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.gal a{border-radius:18px;overflow:hidden;display:block;background:#fff;border:1px solid var(--line)}
+.gal img{aspect-ratio:4/5;object-fit:cover;width:100%;transition:transform .3s}.gal a:hover img{transform:scale(1.03)}
+.note{font-size:14px;color:var(--ink2);margin-top:12px}
+/* package */
+.pk{background:var(--butter);border-radius:32px;padding:44px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
+.pk ul{list-style:none;padding:0;margin:18px 0 0;font-size:19px;line-height:1.9;font-weight:600}.pk li:before{content:"✦ ";color:var(--tan2)}
+.pk img{border-radius:22px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px;counter-reset:s}
+.step{background:#fff;border-radius:20px;padding:20px;border:1px solid var(--line)}
+.step:before{counter-increment:s;content:"0" counter(s);font-family:Fraunces;font-weight:800;font-size:28px;color:var(--tan)}
+.step b{display:block;margin-top:6px;font-size:18px}.step p{margin:4px 0 0;color:var(--ink2);font-size:15px}
+/* faq */
+.faq{margin-top:26px;display:grid;gap:10px}
+details{background:#fff;border-radius:18px;border:1px solid var(--line);padding:18px 22px}
+summary{font-weight:700;font-size:18px;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}summary:after{content:"+";float:right;color:var(--tan);font-size:22px;line-height:1}details[open] summary:after{content:"–"}
+details p{margin:10px 0 0;color:var(--ink2);font-size:16px}
+/* contact */
+.contact{background:var(--tan);color:#fff;border-radius:32px;padding:44px;display:grid;grid-template-columns:1fr 220px;gap:30px;align-items:center}
+.contact h2{color:#fff}.contact .lead{color:#FFE9DF}
+.contact .btn{background:#fff;color:var(--ink)}
+.contact ol{margin:16px 0 0;padding-left:20px;font-size:17px;line-height:1.8}
+.qr{background:#fff;border-radius:22px;padding:14px;text-align:center;color:var(--ink)}.qr img{width:100%}.qr span{font-size:13px;font-weight:700}
+footer{padding:36px 0 90px;color:var(--ink2);font-size:14px}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.float{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 10px 30px rgba(226,85,43,.45)}
+/* lightbox */
+#lb{position:fixed;inset:0;background:rgba(10,15,30,.88);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}#lb.on{display:flex}#lb img{max-height:92vh;border-radius:12px}
+[data-en]{}
+@media(max-width:900px){.links{display:none}.svc{grid-template-columns:1fr 1fr}.demo,.pk,.contact{grid-template-columns:1fr;padding:30px}.phones{height:380px}.gal{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.contact .qr{max-width:220px}}
+@media(max-width:560px){section{padding:52px 0}.svc{grid-template-columns:1fr}.card{padding:22px}.ph{width:170px}.phones{height:330px}.btn{padding:13px 20px;font-size:15px}.nr .btn.sm{display:none}.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#top"><img src="assets/mark.png" alt=""><div><b>Clarkside</b><small>DESIGN STUDIO</small></div></a>
+  <div class="links"><a href="#services" data-ko="서비스" data-en="Services">서비스</a><a href="#demo" data-ko="직접 보기" data-en="Live demo">직접 보기</a><a href="#work" data-ko="작업 예시" data-en="Work">작업 예시</a><a href="#faq" data-ko="자주 묻는 질문" data-en="FAQ">자주 묻는 질문</a></div>
+  <div class="nr"><div class="lang"><button data-l="ko" class="on">KO</button><button data-l="en">EN</button></div><a class="btn sm kakao" href="https://pf.kakao.com/_LxexhxeX/chat" target="_blank" rel="noopener" data-ko="카톡 상담" data-en="Chat with us">카톡 상담</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div class="label" data-ko="앙헬레스 · 클락 사장님들께" data-en="For shop owners in Angeles · Clark">앙헬레스 · 클락 사장님들께</div>
+  <h1 data-ko='메뉴판 · 홈페이지,<br>3개 언어로 <span class="hl">예쁘게</span> 만들어 드립니다' data-en='Menus &amp; websites,<br><span class="hl">beautifully</span> made in 3 languages'>메뉴판 · 홈페이지,<br>3개 언어로 <span class="hl">예쁘게</span> 만들어 드립니다</h1>
+  <div class="en">Make your shop look as good as it tastes.</div>
+  <div class="cta"><a class="btn kakao" href="https://pf.kakao.com/_LxexhxeX/chat" target="_blank" rel="noopener" data-ko="카톡으로 상담하기" data-en="Chat on KakaoTalk">카톡으로 상담하기</a><a class="btn ghost" href="#demo" data-ko="샘플 직접 눌러보기" data-en="Try a live sample">샘플 직접 눌러보기</a></div>
+  <div class="heroimg"><img src="assets/hero.jpg" alt="QR 메뉴 스탠드가 놓인 앙헬레스 레스토랑 테이블 (예시 이미지)"><div class="stk"><b>48h</b><span data-ko="첫 시안까지" data-en="first draft">첫 시안까지</span></div><div class="chips"><span>한국어</span><span>English</span><span>Tagalog</span></div></div>
+</div><div class="strip" aria-hidden="true"><div><span>QR Menu</span><span>✦</span><span>Shop Website</span><span>✦</span><span>Menu Book</span><span>✦</span><span>SNS Ads</span><span>✦</span><span>Photo Retouch</span><span>✦</span><span>한국어 · English · Tagalog</span><span>✦</span><span>QR Menu</span><span>✦</span><span>Shop Website</span><span>✦</span><span>Menu Book</span><span>✦</span><span>SNS Ads</span><span>✦</span><span>Photo Retouch</span><span>✦</span><span>한국어 · English · Tagalog</span><span>✦</span></div></div></header>
+
+<section id="services"><div class="wrap">
+  <div class="label">Services</div>
+  <h2 data-ko="이런 걸 만들어 드려요 <em>— our work</em>" data-en="What we make <em>— our work</em>">이런 걸 만들어 드려요 <em>— our work</em></h2>
+  <div class="svc">
+    <div class="card"><div class="n">01</div><h3 data-ko="QR 웹메뉴판" data-en="QR web menu">QR 웹메뉴판</h3><p data-ko="테이블 QR 찍으면 바로 메뉴가 떠요. 한국어·영어·따갈로그 버튼 하나로 전환, QR 스티커까지." data-en="Scan the table QR and the menu opens. One tap switches Korean, English and Tagalog. QR stickers included.">테이블 QR 찍으면 바로 메뉴가 떠요. 한국어·영어·따갈로그 버튼 하나로 전환, QR 스티커까지.</p></div>
+    <div class="card"><div class="n">02</div><h3 data-ko="가게 홈페이지" data-en="Shop website">가게 홈페이지</h3><p data-ko="메뉴·지도·영업시간·카톡/메신저 주문 버튼까지. PC와 폰 모두 예쁘게." data-en="Menu, map, opening hours and KakaoTalk / Messenger order buttons. Looks great on phone and desktop.">메뉴·지도·영업시간·카톡/메신저 주문 버튼까지. PC와 폰 모두 예쁘게.</p></div>
+    <div class="card"><div class="n">03</div><h3 data-ko="메뉴판 · 메뉴북" data-en="Printed menus">메뉴판 · 메뉴북</h3><p data-ko="사진·3개 언어·가격까지 한눈에. 디자인부터 인쇄·제본 업체 연결까지." data-en="Photos, 3 languages and prices at a glance. Design plus print &amp; binding through local partners.">사진·3개 언어·가격까지 한눈에. 디자인부터 인쇄·제본 업체 연결까지.</p></div>
+    <div class="card"><div class="n">04</div><h3 data-ko="SNS 광고 이미지" data-en="Social media ads">SNS 광고 이미지</h3><p data-ko="페이스북·인스타·카톡 소식용. 신메뉴·할인·시즌 이벤트까지. 틱톡 영상은 별도 상담." data-en="For Facebook, Instagram and KakaoTalk — new menus, promos, seasonal events. TikTok videos on request.">페이스북·인스타·카톡 소식용. 신메뉴·할인·시즌 이벤트까지. 틱톡 영상은 별도 상담.</p></div>
+    <div class="card"><div class="n">05</div><h3 data-ko="메뉴 사진 보정" data-en="Menu photo retouch">메뉴 사진 보정</h3><p data-ko="폰으로 찍은 사진을 광고용 사진으로. 밝고 맛있어 보이게 다듬어 드려요." data-en="Turn phone snaps into ad-ready photos — brighter, cleaner, more delicious.">폰으로 찍은 사진을 광고용 사진으로. 밝고 맛있어 보이게 다듬어 드려요.</p></div>
+    <div class="card"><div class="n">06</div><h3 data-ko="수정 · 관리" data-en="Updates &amp; care">수정 · 관리</h3><p data-ko="메뉴·가격 바뀌면 바로 수정. 네이버 블로그 가게 소개로 한국인 여행객에게도 알려요." data-en="Menu or price changed? We update it fast. Plus a Naver blog feature to reach Korean travelers.">메뉴·가격 바뀌면 바로 수정. 네이버 블로그 가게 소개로 한국인 여행객에게도 알려요.</p></div>
+  </div>
+</div></section>
+
+<section id="demo"><div class="wrap"><div class="demo">
+  <div>
+    <div class="label">Live demo</div>
+    <h2 data-ko="말로 설명하는 것보다<br><em>직접 눌러보세요</em>" data-en="Don't just read about it —<br><em>tap it yourself</em>">말로 설명하는 것보다<br><em>직접 눌러보세요</em></h2>
+    <p class="lead" data-ko="실제로 작동하는 샘플이에요. 폰으로 열어서 언어 버튼을 눌러 보세요. (예시용 가상 가게)" data-en="These are working samples. Open them on your phone and tap the language buttons. (Fictional demo shops)">실제로 작동하는 샘플이에요. 폰으로 열어서 언어 버튼을 눌러 보세요. (예시용 가상 가게)</p>
+    <div class="dlinks">
+      <a class="dl" href="demo/qr-menu/" target="_blank"><div><b data-ko="QR 메뉴판 — 보리그릴" data-en="QR menu — Bori Grill">QR 메뉴판 — 보리그릴</b><span data-ko="고깃집 · 한국어/English/Tagalog" data-en="Korean BBQ · KO / EN / TL">고깃집 · 한국어/English/Tagalog</span></div><i data-ko="열기 →" data-en="Open →">열기 →</i></a>
+      <a class="dl" href="demo/cafe/" target="_blank"><div><b data-ko="홈페이지 — Sunday Crumb" data-en="Website — Sunday Crumb">홈페이지 — Sunday Crumb</b><span data-ko="베이글 카페 · PC/폰" data-en="Bagel café · desktop / mobile">베이글 카페 · PC/폰</span></div><i data-ko="열기 →" data-en="Open →">열기 →</i></a>
+    </div>
+  </div>
+  <div class="phones" aria-hidden="true">
+    <div class="ph" style="left:4%;top:40px;transform:rotate(-7deg)"><img src="assets/work/demo_qr_en.jpg" alt=""></div>
+    <div class="ph" style="right:4%;top:0;z-index:2"><img src="assets/work/demo_qr_ko.jpg" alt=""></div>
+  </div>
+</div></div></section>
+
+<section id="work"><div class="wrap">
+  <div class="label">Work samples</div>
+  <h2 data-ko="이렇게 만들어 드립니다" data-en="Here's what we can make for you">이렇게 만들어 드립니다</h2>
+  <div class="tabs"><button class="on" data-g="all" data-ko="전체" data-en="All">전체</button><button data-g="w" data-ko="서비스 예시" data-en="Services">서비스 예시</button><button data-g="b" data-ko="브랜드 패키지" data-en="Brand packages">브랜드 패키지</button></div>
+  <div class="gal">
+    <a href="assets/work/w1_qrmenu.jpg" data-c="w"><img loading="lazy" src="assets/work/w1_qrmenu.jpg" alt="QR 웹메뉴판 예시"></a>
+    <a href="assets/work/w2_homepage.jpg" data-c="w"><img loading="lazy" src="assets/work/w2_homepage.jpg" alt="가게 홈페이지 예시"></a>
+    <a href="assets/work/w3_menubook.jpg" data-c="w"><img loading="lazy" src="assets/work/w3_menubook.jpg" alt="메뉴북 예시"></a>
+    <a href="assets/work/w4_sns.jpg" data-c="w"><img loading="lazy" src="assets/work/w4_sns.jpg" alt="SNS 광고 이미지 예시"></a>
+    <a href="assets/work/b1_retro.jpg" data-c="b"><img loading="lazy" src="assets/work/b1_retro.jpg" alt="레트로 버거집 브랜드 패키지 예시"></a>
+    <a href="assets/work/b2_pop.jpg" data-c="b"><img loading="lazy" src="assets/work/b2_pop.jpg" alt="코리안 타코집 브랜드 패키지 예시"></a>
+    <a href="assets/work/b3_bakery.jpg" data-c="b"><img loading="lazy" src="assets/work/b3_bakery.jpg" alt="베이커리 브랜드 패키지 예시"></a>
+    <a href="assets/work/b4_pocha.jpg" data-c="b"><img loading="lazy" src="assets/work/b4_pocha.jpg" alt="포차 브랜드 패키지 예시"></a>
+  </div>
+  <p class="note" data-ko="※ 모든 작업 예시는 스타일을 보여 드리기 위한 가상 가게입니다. 실제 작업은 사장님 가게에 맞춰 새로 디자인합니다." data-en="※ All samples are fictional shops made to show our styles. Your design is made fresh for your shop.">※ 모든 작업 예시는 스타일을 보여 드리기 위한 가상 가게입니다. 실제 작업은 사장님 가게에 맞춰 새로 디자인합니다.</p>
+</div></section>
+
+<section><div class="wrap"><div class="pk">
+  <div>
+    <div class="label">Open package</div>
+    <h2 data-ko="오픈 준비 중이시면<br><em>한 번에</em> 준비해 드려요" data-en="Opening soon?<br>Get it all <em>in one go</em>">오픈 준비 중이시면<br><em>한 번에</em> 준비해 드려요</h2>
+    <ul><li data-ko="가게 홈페이지" data-en="Shop website">가게 홈페이지</li><li data-ko="QR 웹메뉴판 + QR 스티커" data-en="QR web menu + stickers">QR 웹메뉴판 + QR 스티커</li><li data-ko="SNS 광고 이미지" data-en="Social media ad images">SNS 광고 이미지</li><li data-ko="네이버 블로그 가게 소개 1편" data-en="1 Naver blog feature (Korean travelers)">네이버 블로그 가게 소개 1편</li></ul>
+    <p style="font-size:20px;font-weight:800;margin-top:16px" data-ko="견적은 가게에 맞춰 안내드려요" data-en="We'll quote to fit your shop">견적은 가게에 맞춰 안내드려요</p>
+  </div>
+  <img loading="lazy" src="assets/package.jpg" alt="오픈 패키지 예시 — 메뉴판, QR 스탠드, 모바일 메뉴, 홈페이지, QR 스티커, 명함 (가상 가게 보리그릴)">
+</div></div></section>
+
+<section><div class="wrap">
+  <div class="label">How it works</div>
+  <h2 data-ko="진행은 이렇게 해요" data-en="How it works">진행은 이렇게 해요</h2>
+  <div class="steps">
+    <div class="step"><b data-ko="카톡 상담" data-en="Chat">카톡 상담</b><p data-ko="가게 이름·필요한 것·메뉴 개수만 알려 주세요" data-en="Tell us your shop, what you need and how many menu items">가게 이름·필요한 것·메뉴 개수만 알려 주세요</p></div>
+    <div class="step"><b data-ko="자료 받기" data-en="Materials">자료 받기</b><p data-ko="메뉴·가격·사진(폰 사진 OK)" data-en="Menu, prices, photos (phone photos OK)">메뉴·가격·사진(폰 사진 OK)</p></div>
+    <div class="step"><b data-ko="48시간 첫 시안" data-en="Draft in 48h">48시간 첫 시안</b><p data-ko="상담 후 48시간 안에 보내드려요" data-en="First draft within 48 hours">상담 후 48시간 안에 보내드려요</p></div>
+    <div class="step"><b data-ko="수정" data-en="Revise">수정</b><p data-ko="원하시는 대로 다듬어요" data-en="We refine it with you">원하시는 대로 다듬어요</p></div>
+    <div class="step"><b data-ko="완성 · 관리" data-en="Launch &amp; care">완성 · 관리</b><p data-ko="QR 스티커·인쇄, 이후 수정까지" data-en="QR stickers, printing and later updates">QR 스티커·인쇄, 이후 수정까지</p></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="label">FAQ</div>
+  <h2 data-ko="자주 묻는 질문" data-en="Questions">자주 묻는 질문</h2>
+  <div class="faq">
+    <details><summary data-ko="가격은 얼마인가요?" data-en="How much does it cost?">가격은 얼마인가요?</summary><p data-ko="메뉴 개수와 필요한 작업에 따라 달라요. 카톡으로 가게 이름·필요한 것·메뉴 개수를 보내 주시면 바로 견적 안내드려요." data-en="It depends on your menu size and what you need. Send us your shop name, what you need and roughly how many menu items on KakaoTalk and we'll quote right away.">메뉴 개수와 필요한 작업에 따라 달라요. 카톡으로 가게 이름·필요한 것·메뉴 개수를 보내 주시면 바로 견적 안내드려요.</p></details>
+    <details><summary data-ko="얼마나 걸리나요?" data-en="How long does it take?">얼마나 걸리나요?</summary><p data-ko="자료를 받고 상담한 뒤 48시간 안에 첫 시안을 보내드려요." data-en="We send the first draft within 48 hours after our chat and receiving your materials.">자료를 받고 상담한 뒤 48시간 안에 첫 시안을 보내드려요.</p></details>
+    <details><summary data-ko="메뉴 사진이 없어도 되나요?" data-en="I don't have good photos. Is that OK?">메뉴 사진이 없어도 되나요?</summary><p data-ko="네. 폰으로 찍은 사진을 보내 주시면 광고용으로 보정해 드려요." data-en="Yes. Send us phone photos and we'll retouch them for ads.">네. 폰으로 찍은 사진을 보내 주시면 광고용으로 보정해 드려요.</p></details>
+    <details><summary data-ko="필리핀 손님·직원용 언어도 되나요?" data-en="Can you do English and Tagalog?">필리핀 손님·직원용 언어도 되나요?</summary><p data-ko="네. 한국어·영어·따갈로그 3개 언어로 만들어 드려요." data-en="Yes — Korean, English and Tagalog.">네. 한국어·영어·따갈로그 3개 언어로 만들어 드려요.</p></details>
+    <details><summary data-ko="메뉴나 가격이 바뀌면요?" data-en="What if my menu or prices change?">메뉴나 가격이 바뀌면요?</summary><p data-ko="QR 메뉴판·홈페이지는 바로 수정해 드려요. 꾸준히 바뀌는 가게는 월 관리도 상담 가능해요." data-en="We update your QR menu or website quickly. Monthly care is available for shops that change often.">QR 메뉴판·홈페이지는 바로 수정해 드려요. 꾸준히 바뀌는 가게는 월 관리도 상담 가능해요.</p></details>
+    <details><summary data-ko="인쇄도 해 주나요?" data-en="Do you handle printing?">인쇄도 해 주나요?</summary><p data-ko="디자인을 해 드리고, 인쇄·제본은 현지 업체와 연결해 드려요." data-en="We design it and connect you with local print and binding shops.">디자인을 해 드리고, 인쇄·제본은 현지 업체와 연결해 드려요.</p></details>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+  <div>
+    <h2 data-ko="카톡 채널로<br>편하게 물어보세요" data-en="Message us<br>on KakaoTalk">카톡 채널로<br>편하게 물어보세요</h2>
+    <ol><li data-ko="가게 이름·위치" data-en="Shop name &amp; location">가게 이름·위치</li><li data-ko="필요한 것 (QR메뉴 / 홈페이지 / 메뉴북 / 광고 이미지 / 틱톡)" data-en="What you need (QR menu / website / menu book / ad images / TikTok)">필요한 것 (QR메뉴 / 홈페이지 / 메뉴북 / 광고 이미지 / 틱톡)</li><li data-ko="메뉴 개수 (대략)" data-en="Roughly how many menu items">메뉴 개수 (대략)</li></ol>
+    <div style="margin-top:22px"><a class="btn kakao" href="https://pf.kakao.com/_LxexhxeX/chat" target="_blank" rel="noopener" data-ko="카톡 상담 시작하기" data-en="Start a KakaoTalk chat">카톡 상담 시작하기</a></div>
+  </div>
+  <div class="qr"><img src="assets/qr_chat.png" alt="카톡 채널 QR"><span data-ko="카톡 검색: 클락사이드디자인" data-en="KakaoTalk ID: 클락사이드디자인">카톡 검색: 클락사이드디자인</span></div>
+</div></div></section>
+
+<footer><div class="wrap"><span>© 2026 Clarkside Design Studio · Angeles · Clark, Pampanga</span><span><a href="https://clarksideph.com/" target="_blank" rel="noopener" data-ko="클락사이드 여행" data-en="Clarkside Travel">클락사이드 여행</a></span></div></footer>
+<a class="btn float kakao" href="https://pf.kakao.com/_LxexhxeX/chat" target="_blank" rel="noopener" data-ko="💬 카톡 상담" data-en="💬 Chat">💬 카톡 상담</a>
+<div id="lb"><img alt=""></div>
+<script>
+(function(){
+  var KEY='cs-design-lang';
+  function setLang(l){document.documentElement.lang=l;document.querySelectorAll('[data-'+l+']').forEach(function(e){e.innerHTML=e.getAttribute('data-'+l)});
+    document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.l===l)});try{localStorage.setItem(KEY,l)}catch(e){}}
+  var q=(location.search.match(/lang=(ko|en)/)||[])[1],saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
+  var l=q||saved||(navigator.language||'ko').slice(0,2);if(l!=='ko'&&l!=='en')l='en';if(l!=='ko')setLang(l);
+  document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
+  document.querySelectorAll('.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});
+    document.querySelectorAll('.gal a').forEach(function(a){a.style.display=(b.dataset.g==='all'||a.dataset.c===b.dataset.g)?'':'none'})}});
+  var lb=document.getElementById('lb');document.querySelectorAll('.gal a').forEach(function(a){a.onclick=function(e){e.preventDefault();lb.querySelector('img').src=a.href;lb.classList.add('on')}});lb.onclick=function(){lb.classList.remove('on')};
+})();
+</script>
+</body>
+</html>

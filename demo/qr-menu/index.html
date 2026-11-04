@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,500&family=Instrument+Sans:wght@500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+:root{--cream:#FBF6EC;--paper:#FFFFFF;--ink:#14213D;--ink2:#4A5468;--tan:#FF6A3D;--butter:#FFD978;--line:#E9E0CF;--sage:#DDE8D3;--sky:#D7E6F5}
+*{box-sizing:border-box}body{margin:0;font-family:Pretendard,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.serif{font-family:Fraunces,serif}.label{font-family:'Instrument Sans',Pretendard,sans-serif;text-transform:uppercase;letter-spacing:.14em;font-weight:600}
+</style><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Bori Grill — QR Menu (Sample)</title>
+<style>
+body{max-width:480px;margin:0 auto;background:var(--cream);padding-bottom:80px}.langs span{cursor:pointer}
+.top{position:relative;height:250px;overflow:hidden}
+.top img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.top:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,33,61,0) 40%,rgba(20,33,61,.55))}
+.brand{position:absolute;left:20px;bottom:18px;z-index:2;color:#fff}
+.brand h1{font-family:Fraunces;font-weight:800;font-size:38px;margin:0;line-height:1}
+.brand p{margin:6px 0 0;font-size:13px;opacity:.9}
+.langs{display:flex;gap:6px;padding:14px 20px 4px}
+.langs span{padding:7px 13px;border-radius:99px;border:1.5px solid var(--ink);font-size:13px;font-weight:700}
+.langs .on{background:var(--ink);color:#fff}
+.tabs{display:flex;gap:18px;padding:12px 20px;border-bottom:1px solid var(--line);font-weight:700;font-size:15px;color:var(--ink2)}
+.tabs .on{color:var(--ink);border-bottom:3px solid var(--tan);padding-bottom:8px}
+.sec{padding:16px 20px 4px;font-family:Fraunces;font-weight:600;font-size:22px}
+.item{display:flex;gap:14px;padding:12px 20px;align-items:center}
+.item img{width:84px;height:84px;border-radius:16px;object-fit:cover}
+.item .t{flex:1}.item b{font-size:16px;display:block}
+.item small{display:block;color:var(--ink2);font-size:12.5px;margin-top:3px;line-height:1.35}
+.item .p{font-weight:800;font-size:15px;margin-top:6px}
+.badge{display:inline-block;background:var(--butter);font-size:10.5px;font-weight:800;padding:3px 7px;border-radius:6px;margin-left:6px;vertical-align:2px}
+.hot{background:var(--tan);color:#fff}
+.cta{margin:14px 20px 24px;background:var(--tan);color:#fff;border-radius:16px;padding:15px;text-align:center;font-weight:800;font-size:16px}
+</style></head><body>
+<div class="top"><img src="../img/kbbq.jpg"><div class="brand"><h1>Bori Grill</h1><p id="sub"></p></div></div>
+<div class="langs"><span data-l="ko">한국어</span><span data-l="en">English</span><span data-l="tl">Tagalog</span></div>
+<div class="tabs" id="tabs"></div>
+<div class="sec" id="s1"></div><div id="list"></div>
+<div class="cta" id="cta"></div>
+<script>
+let L=(location.hash||'#ko').slice(1);if(!['ko','en','tl'].includes(L))L='ko';
+document.querySelectorAll('.langs span').forEach(s=>{if(s.dataset.l===L)s.classList.add('on');s.onclick=()=>{location.hash=s.dataset.l;location.reload()}});
+const T={
+ko:{sub:'앙헬레스 · 숯불 삼겹살 · 매일 11:00–23:00',tabs:['고기','식사','음료'],s1:'오늘의 추천',cta:'카톡으로 예약하기',
+ it:[['숯불 삼겹살','국내식 두툼한 생삼겹 200g · 쌈채소 무한','₱ 480','BEST'],['양념 돼지갈비','달콤짭짤 수제 양념 · 2인분부터','₱ 520',''],['돌솥 비빔밥','반숙 계란 · 고추장 따로','₱ 320','NEW'],['김치찌개','묵은지 · 공기밥 포함','₱ 290',''],['양념치킨 반마리','바삭한 튀김 + 매콤달콤 양념','₱ 390','']]},
+en:{sub:'Angeles · Charcoal Pork Belly · Daily 11AM–11PM',tabs:['BBQ','Meals','Drinks'],s1:"Today's Picks",cta:'Reserve on KakaoTalk',
+ it:[['Charcoal Pork Belly','Thick-cut fresh pork belly 200g · free lettuce refills','₱ 480','BEST'],['Marinated Pork Ribs','Sweet & savory house marinade · min. 2 servings','₱ 520',''],['Stone-pot Bibimbap','Soft egg · gochujang on the side','₱ 320','NEW'],['Kimchi Stew','Aged kimchi · comes with rice','₱ 290',''],['Yangnyeom Chicken (Half)','Crispy fried + sweet-spicy glaze','₱ 390','']]},
+tl:{sub:'Angeles · Inihaw na Liempo · Bukas araw-araw 11AM–11PM',tabs:['Inihaw','Ulam','Inumin'],s1:'Rekomendado Ngayon',cta:'Mag-reserve sa KakaoTalk',
+ it:[['Charcoal Liempo','Makapal na sariwang liempo 200g · unli lettuce','₱ 480','BEST'],['Marinated Pork Ribs','Matamis-maalat na house marinade · min. 2 servings','₱ 520',''],['Stone-pot Bibimbap','Malasadong itlog · may gochujang','₱ 320','NEW'],['Kimchi Stew','Asim-anghang na kimchi · may kanin','₱ 290',''],['Yangnyeom Chicken (Half)','Malutong + matamis-maanghang na sauce','₱ 390','']]}}[L];
+document.getElementById('sub').textContent=T.sub;document.getElementById('s1').textContent=T.s1;document.getElementById('cta').textContent=T.cta;
+document.getElementById('tabs').innerHTML=T.tabs.map((t,i)=>`<span class="${i?'':'on'}">${t}</span>`).join('');
+const img=['t_belly','t_ribs','t_bibim','t_stew','t_chicken'];
+document.getElementById('list').innerHTML=T.it.map((x,i)=>`<div class="item"><img src="../img/${img[i]}.jpg"><div class="t"><b>${x[0]}${x[3]?`<span class="badge ${x[3]=='BEST'?'hot':''}">${x[3]}</span>`:''}</b><small>${x[1]}</small><div class="p">${x[2]}</div></div></div>`).join('');
+</script><a href="../../" style="position:fixed;left:12px;right:12px;bottom:12px;z-index:99;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#14213D;color:#fff;text-decoration:none;border-radius:16px;padding:11px 14px;font:600 13px Pretendard,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.25)"><span>✦ 예시용 가상 가게 · Clarkside Design 샘플</span><b style="background:#FF6A3D;border-radius:99px;padding:6px 12px;white-space:nowrap">이렇게 만들어 드려요 →</b></a></body></html>
